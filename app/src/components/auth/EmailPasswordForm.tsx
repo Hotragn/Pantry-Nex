@@ -59,7 +59,7 @@ const EmailPasswordForm: React.FC<EmailPasswordFormProps> = ({
         } else {
           await signInWithEmailAndPassword(auth, email, password);
         }
-        router.push("/dashboard");
+        router.push("/Home");
       } catch (error) {
         console.error("Error:", error);
       }
