@@ -15,7 +15,7 @@ const SocialAuthButtons: React.FC = () => {
     const provider = new GoogleAuthProvider();
     try {
       await signInWithPopup(auth, provider);
-      router.push("/dashboard");
+      router.push("/Home");
     } catch (error) {
       console.error("Error signing in with Google:", error);
     }
