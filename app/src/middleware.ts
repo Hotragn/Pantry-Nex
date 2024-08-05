@@ -9,7 +9,7 @@ export function middleware(request: NextRequest) {
   }
 
   if (currentUser && request.nextUrl.pathname.startsWith("/auth")) {
-    return NextResponse.redirect(new URL("/Home", request.url));
+    return NextResponse.redirect(new URL("/dashboard", request.url));
   }
 
   return NextResponse.next();
